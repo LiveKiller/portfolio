@@ -45,16 +45,16 @@ function App() {
           <section id="certification" className="section">
             <h2>Certifications</h2>
             <CertificationCard name="Certification 1" course="Course Name" />
-            <CertificationCard name="Certification 2" course="Course Name" />
+            <CertificationCard name="Certification 2" course="Course Name" link="https://codered.eccouncil.org/certificate/fdea0a5c-98f4-4f4f-b854-8532ee5ecddd?logged=true" src="/assets/image.png"/>
           </section>
         </main>
         <footer className="footer">
           <div className="social-buttons">
             <SocialIcon icon="facebook" link="#" label="Facebook" />
-            <SocialIcon icon="google" link="#" label="Gmail" />
-            <SocialIcon icon="linkedin" link="#" label="LinkedIn" />
-            <SocialIcon icon="github" link="#" label="GitHub" />
-            <SocialIcon icon="instagram" link="#" label="Instagram" />
+            <SocialIcon icon="google" link="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=singhsavitender4031@email.com&subject=MISSED%20CALL%20EZTRADER&body=Hello%2C%0A%0AI%20tried%20contacting%20you%20today%20but%20you%20seem%20to%20have%20missed%20my%20call.%20%0A%0APlease%20return%20my%20call%20as%20soon%20as%20you%E2%80%99re%20available.%20%0A%0AIn%20any%20case%2C%20I%20will%20try%20ringing%20you%20at%20a%20later%20time.%0A%0A%0ATy%2C%0A%0A%0A%0A" label="Gmail" />
+            <SocialIcon icon="linkedin" link="https://www.linkedin.com/in/savitender-singh-86438928a/" label="LinkedIn" />
+            <SocialIcon icon="github" link="https://github.com/LiveKiller" label="GitHub" />
+            <SocialIcon icon="instagram" link="https://instagram.com/savi_lk.1" label="Instagram" />
           </div>
           <div className="copyright">
             <p>&copy; 2024 My Portfolio. All rights reserved.</p>
@@ -66,18 +66,25 @@ function App() {
 }
 
 // Certification Card component
-const CertificationCard = ({ name, course }) => (
+// Certification Card component
+const CertificationCard = ({ name, course, link, src }) => (
   <div className="certification-card">
-    <h3>{name}</h3>
-    <p>{course}</p>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <h3>{name}</h3>
+      <p>{course}</p>
+      <img src={src} alt={name} className="certification-image" />
+    </a>
   </div>
 );
 
+
 // Social Icon component
-const SocialIcon = ({ icon, link, label }) => (
-  <a href={link} className={`social-button social-button--${icon}`} aria-label={label}>
-    <i className={`fab fa-${icon}`}></i>
-  </a>
-);
+const SocialIcon = ({ icon, link, label }) => {
+  return (
+    <a href={link} className={`social-button social-button--${icon}`} aria-label={label}>
+      <i className={`fab fa-${icon}`}></i>
+    </a>
+  );
+}
 
 export default App;
