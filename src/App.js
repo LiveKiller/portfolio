@@ -3,8 +3,8 @@ import './App.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 function App() {
-  const name = "Savitender Singh";
-  const description = "A passionate developer with a knack for problem-solving.";
+  const name = ", I'm Savitender Singh a B.Tech CSE 1st year Student at SGT University";
+  const description = "Fluent in Python | C++ | C | Java | GUI in Python | Game Dev in Python | HTML5 | CSS3 || Currently learning js; React.js; ";
 
   return (
     <div className="App">
@@ -16,7 +16,7 @@ function App() {
         <header className="App-header">
           <div className="intro">
             <div className="intro-text">
-              <h1>Hi {name}</h1>
+              <h1>Hi{name}</h1>
               <p>{description}</p>
             </div>
             <img src="profile-picture.jpg" alt="Profile" className="profile-picture" />
