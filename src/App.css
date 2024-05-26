@@ -279,6 +279,33 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Education Section */
+#education {
+  border-radius: 15px;
+  margin-left: 10px;
+  text-align:center;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+}
+
+/* Projects Section */
+#projects {
+  border-radius: 15px;
+  margin-left: 10px;
+  text-align:center;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Certifications Section */
+#certifications {
+  border-radius: 15px;
+  margin-left: 10px;
+  text-align:center;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #3f4c6b, #606c88);
+}
+
 
 
 .App-header {
@@ -318,20 +345,26 @@ body {
 }
 
 .section {
-  height: 100vh; /* Set the height to 100% of the viewport height */
+  overflow:overlay ;
+  height: 100vh;
   padding: 20px 0;
-  border-bottom: none; /* Remove the border-bottom */
-  overflow-y: auto; /* Add vertical scrollbar when content exceeds the height */
+  border-bottom: none; /* Remove the border-bottom */-webkit-overflow-scrolling: touch;
 }
 
 .section:last-child {
   border-bottom: none;
 }
 .card {
-  height: 100vh; 
-  margin-top: 3vh;
-  overflow-y: scroll; /* Add a vertical scrollbar to the card container */
-  scroll-snap-type: y mandatory; /* Enable scroll snapping vertically */
+  background-color: rgba(121, 75, 75, 0.717);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 220vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow: overlay;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px;
+  margin-top: 60px;
 }
 .projects {
   display: flex;
