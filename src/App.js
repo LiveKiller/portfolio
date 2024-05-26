@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-
 function App() {
-  const name = ", I'm Savitender Singh a B.Tech CSE 1st year Student at SGT University";
-  const description = "Fluent in Python | C++ | C | Java | GUI in Python | Game Dev in Python | HTML5 | CSS3 || Currently learning js; React.js; ";
+  const name = ", I'm Savitender Singh, a B.Tech CSE 1st year Student at SGT University";
+  const description = "Fluent in Python, C++, C, Java, GUI in Python, Game Dev in Python, HTML5, CSS3. Currently learning JavaScript and React.js.";
 
   return (
     <div className="App">
@@ -29,29 +28,87 @@ function App() {
           </section>
           <section id="projects" className="section">
             <h2>Projects</h2>
-            <div className="projects">
-              <div className="project-card">
-                <h3>Project 1</h3>
-                <p>A brief description of Project 1.</p>
-                <img src="project1.jpg" alt="Project 1" className="project-image" />
+            <div className="container">
+              <div className="box">
+                <span></span>
+                <div className="content">
+                  <h2>Library Management System</h2>
+                  <p>This project manages books in library whether by adding them updating issuing etc. To know more check it out by clicking the button</p>
+                  <a href="https://github.com/LiveKiller/Library_Management" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
               </div>
-              <div className="project-card">
-                <h3>Project 2</h3>
-                <p>A brief description of Project 2.</p>
-                <img src="project2.jpg" alt="Project 2" className="project-image" />
+              <div className="box">
+                <span></span>
+                <div className="content">
+                  <h2>Kryptos</h2>
+                  <p>A project based on Kryptos sculpture in the CIA HQ, it encrypts and decrypts data into different types.</p>
+                  <a href="https://github.com/LiveKiller/Kryptos/tree/master/Kryptos" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+              </div>
+              <div className="box">
+                <span></span>
+                <div className="content">
+                  <h2>To-Do List</h2>
+                  <p>Users can create to-do lists, track their tasks, delete and even update their tasks, all of the tasks are stored in the DB using MySQL.</p>
+                  <a href="https://github.com/LiveKiller/CodSoft/tree/main/To-Do-List" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+              </div>
+
+              <div className="box">
+                <span></span>
+                <div className="content">
+                  <h2>Library Management System</h2>
+                  <p>P4</p>
+                  <a href="https://github.com/LiveKiller/Library_Management" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+              </div>
+              <div className="box">
+                <span></span>
+                <div className="content">
+                  <h2>Library Management System</h2>
+                  <p>TP5</p>
+                  <a href="https://github.com/LiveKiller/Library_Management" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+          </section>
+          <section id="certifications" className="section">
+            <h2>Certifications</h2>
+            <div className="container">
+              <div className="box">
+                <span></span>
+                <div className="content">
+                  <h2>Certification 1</h2>
+                  <p>Description of Certification 1</p>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+              </div>
+              <div className="box">
+                <span></span>
+                <div className="content">
+                  <h2>Certification 2</h2>
+                  <p>Description of Certification 2</p>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+              </div>
+              <div className="box">
+                <span></span>
+                <div className="content">
+                  <h2>Certification 2</h2>
+                  <p>Description of Certification 2</p>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
               </div>
             </div>
-          </section>
-          <section id="certification" className="section">
-            <h2>Certifications</h2>
-            <CertificationCard name="Certification 1" course="Course Name" />
-            <CertificationCard name="Certification 2" course="Course Name" link="https://codered.eccouncil.org/certificate/fdea0a5c-98f4-4f4f-b854-8532ee5ecddd?logged=true" src="/assets/image.png"/>
           </section>
         </main>
         <footer className="footer">
           <div className="social-buttons">
             <SocialIcon icon="facebook" link="#" label="Facebook" />
-            <SocialIcon icon="google" link="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=singhsavitender4031@email.com&subject=MISSED%20CALL%20EZTRADER&body=Hello%2C%0A%0AI%20tried%20contacting%20you%20today%20but%20you%20seem%20to%20have%20missed%20my%20call.%20%0A%0APlease%20return%20my%20call%20as%20soon%20as%20you%E2%80%99re%20available.%20%0A%0AIn%20any%20case%2C%20I%20will%20try%20ringing%20you%20at%20a%20later%20time.%0A%0A%0ATy%2C%0A%0A%0A%0A" label="Gmail" />
+            <SocialIcon icon="google" link="mailto:singhsavitender4031@email.com?subject=MISSED%20CALL%20EZTRADER" label="Gmail" />
             <SocialIcon icon="linkedin" link="https://www.linkedin.com/in/savitender-singh-86438928a/" label="LinkedIn" />
             <SocialIcon icon="github" link="https://github.com/LiveKiller" label="GitHub" />
             <SocialIcon icon="instagram" link="https://instagram.com/savi_lk.1" label="Instagram" />
@@ -65,23 +122,10 @@ function App() {
   );
 }
 
-// Certification Card component
-// Certification Card component
-const CertificationCard = ({ name, course, link, src }) => (
-  <div className="certification-card">
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      <h3>{name}</h3>
-      <p>{course}</p>
-      <img src={src} alt={name} className="certification-image" />
-    </a>
-  </div>
-);
-
-
 // Social Icon component
 const SocialIcon = ({ icon, link, label }) => {
   return (
-    <a href={link} className={`social-button social-button--${icon}`} aria-label={label}>
+    <a href={link} className={`social-button social-button--${icon}`} aria-label={label} target="_blank" rel="noopener noreferrer">
       <i className={`fab fa-${icon}`}></i>
     </a>
   );
