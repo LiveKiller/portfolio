@@ -1,0 +1,24 @@
+
+.section p {
+    font-size: 1.3rem;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .section {
+    overflow: overlay;
+    height: 100vh;
+    padding: 20px 0;
+    border-bottom: none; /* Remove the border-bottom */
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .section:last-child {
+    border-bottom: none;
+  }
+  
