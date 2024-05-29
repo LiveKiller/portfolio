@@ -58,6 +58,7 @@
   display:inline-block;
   height:35px;
   padding-top:15px;
+  scroll-behavior: smooth;
   margin-left:25px;
   margin-right:25px;
   margin-bottom:25px;
